@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Simples</title>
+  <style>
+     * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f0;
+    }
+
+    
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #2c3e50;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      border-bottom: 3px solid #1abc9c;
+      z-index: 1000;
+    }
+
+    aside {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 200px;
+      height: calc(100vh - 60px);
+      background-color: #34495e;
+      color: white;
+      padding: 20px;
+      border-right: 3px solid #1abc9c;
+      z-index: 500;
+    }
+
+    aside ul {
+      list-style: none;
+    }
+
+    aside li {
+      margin: 15px 0;
+    }
+
+   
+    main {
+      margin-top: 60px;
+      margin-left: 220px;
+      padding: 20px;
+      background-color: #ffffff;
+      min-height: calc(100vh - 60px);
+      border: 3px solid #bdc3c7;
+    }
+
+    .card {
+      background-color: #ecf0f1;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 2px solid #7f8c8d;
+      border-radius: 8px;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meu Site Criativo </h1>
+  </header>
+
+  <aside>
+    <h3>Menu</h3>
+    <ul>
+      <li>Início</li>
+      <li>Projetos</li>
+      <li>Contato</li>
+    </ul>
+  </aside>
+
+  <main>
+    <div class="card">
+      <h2> Exploração Espacial</h2>
+      <p>Bem-vindo a um site fictício sobre exploração espacial! Aqui você encontra curiosidades sobre planetas, estrelas e o universo.</p>
+    </div>
+
+    <div class="card">
+      <h2> Curiosidade</h2>
+      <p>Você sabia que Júpiter é tão grande que caberiam mais de 1.300 Terras dentro dele?</p>
+    </div>
+
+    <div class="card">
+      <h2>Missões</h2>
+      <p>As missões espaciais modernas utilizam inteligência artificial para navegação e coleta de dados.</p>
+    </div>
+  </main>
+
+</body>
+</html>
